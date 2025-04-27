@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+* {
+  font-family: "Inter";
+}
+
+:root {
+  --blue__0: #a9c5f1;
+  --blue__1: #015aff;
+
+  --yell: #f4f1d2;
+
+  --black__0: #0d1e26;
+  --black__1: #060f13;
+}
+
+html {
+  background: var(--black__0);
+}
+
+.txt__blue_0 {
+  color: var(--blue__0);
+}
+.txt__yell_0 {
+  color: var(--yell);
+}
+
+.txt__h_0 {
+  @apply text-[32px];
+}
+.txt___h_1 {
+  @apply text-[40px];
+}
+.txt__h_2 {
+  @apply text-[48px];
+}
+
+.txt__h_0 .txt___h_1 .txt__h_2 {
+  @apply leading-[140%] tracking-[0];
+}
+
+.txt__b_0 {
+  @apply text-[16px];
+}
+
+.txt__btn_0 {
+  @apply text-[18px];
+}
+
+.txt__b_0,
+.txt__btn_0 {
+  @apply leading-[180%] tracking-[0];
+}
