@@ -1,6 +1,11 @@
 import { FC } from "react";
 import { imgs } from "../../assets/assets";
 import Experience from "./components/Experience/Experience";
+import Education from "./components/Education";
+import Title from "../../components/Title";
+import Languages from "./components/Languages";
+import Skills from "./components/Skills";
+import Tools from "./components/Tools";
 
 const AboutMe: FC = () => {
   return (
@@ -8,13 +13,16 @@ const AboutMe: FC = () => {
       id="aboutMe"
       className="w-full padding__app pt-[64px] pb-[128px] grid grid-cols-1 gap-[15px] justify-items-center"
     >
-      <div className="w-full flex justify-center">
-        <h1 className="txt__h_1 txt__yell_0 font-bold">About Me</h1>
-      </div>
+      <Title
+        {...{
+          title: "About Me",
+          style: "justify-center txt__h_1 txt__yell_0 font-bold",
+        }}
+      />
 
-      <div className="w-full grid gap-[32px]">
+      <div className="w-full grid gap-[32px] sm:max-w-[576px] lg:max-w-full ">
         {/* LEFT / UP */}
-        <div className="w-full grid gap-[32px]">
+        <div className="w-full grid gap-[32px] lg:grid-cols-2">
           <div className="w-full flex justify-center items-center xl:h-full">
             <div className="flex justify-center w-full h-fit items-center">
               <div className="w-[80%] h-fit relative xl:w-full">
@@ -45,7 +53,19 @@ const AboutMe: FC = () => {
           </div>
         </div>
         {/* RIGHT / DOWN */}
-        <Experience />
+        <div className="w-full grid lg:grid-cols-2 gap-[32px] lg:items-start lg:h-fit">
+          <Experience />
+
+          <div className="w-full grid gap-[16px]">
+            <Education />
+
+            <Languages />
+
+            <Skills />
+
+            <Tools />
+          </div>
+        </div>
       </div>
     </section>
   );

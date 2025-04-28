@@ -21,16 +21,27 @@ const Splitter = ({
   </div>
 );
 
-const ExperienceItem: FC<PropsType> = ({ title, type, at, when }) => {
+const ExperienceItem: FC<PropsType> = ({
+  title,
+  type,
+  at,
+  when,
+  description,
+}) => {
   return (
     <div className="w-full grid grid-cols-1">
       {/* HEADER */}
       <Splitter {...{ pair: [title, type], styleCustom: "txt__blue_0" }} />
-      {/* BODY */}
 
+      {/* BODY */}
       <Splitter
         {...{ pair: [at, when], styleCustom: "txt__yell_0 font-semibold" }}
       />
+
+      {/* FOOTER */}
+      <div className="w-full">
+        <p className="txt__yell_0 txt__btn_0">{description}</p>
+      </div>
     </div>
   );
 };

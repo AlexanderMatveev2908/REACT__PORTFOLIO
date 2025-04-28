@@ -51,7 +51,7 @@ export const experiences: ExpType[] = [
     title: "Barman",
     type: TypeWork.ON_SITE,
     at: "Pizzeria La Lucciola",
-    when: "Jun 2019 - Jan 2020",
+    when: "Jun 2019 - Mar 2020",
     description:
       "Created the cocktail menu, changed beer stems when needed, and trained new employees on front-of-house workflow and cocktail preparation standards.",
   },

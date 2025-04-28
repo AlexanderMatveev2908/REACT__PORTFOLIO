@@ -36,6 +36,8 @@ export const icons = {
   x,
 };
 
+export const mySkills = [html, css, js, ts, king];
+
 export const imgs = {
   hero_0,
   xo,

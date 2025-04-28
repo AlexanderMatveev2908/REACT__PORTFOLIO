@@ -67,6 +67,9 @@ html {
 .padding__app {
   @apply px-[16px] sm:px-[64px] xl:px-[128px];
 }
+.about_me_cont {
+  @apply w-full grid lg:order-1 gap-[4px] items-start;
+}
 
 .btn__app {
   transition: 0.3s;
