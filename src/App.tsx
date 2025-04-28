@@ -1,7 +1,8 @@
 import { FC } from "react";
 import Header from "./common/Header";
 import Hero from "./common/Hero/Hero";
-import PortoFolio from "./components/PortoFolio/PortoFolio";
+import PortoFolio from "./common/PortoFolio/PortoFolio";
+import AboutMe from "./common/AboutMe/AboutMe";
 
 const App: FC = () => {
   return (
@@ -9,6 +10,7 @@ const App: FC = () => {
       <Header />
       <Hero />
       <PortoFolio />
+      <AboutMe />
     </main>
   );
 };

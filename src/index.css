@@ -27,14 +27,14 @@ html {
 .txt__h_0 {
   @apply text-[32px];
 }
-.txt___h_1 {
+.txt__h_1 {
   @apply text-[40px];
 }
 .txt__h_2 {
   @apply text-[48px];
 }
 
-.txt__h_0 .txt___h_1 .txt__h_2 {
+.txt__h_0 .txt__h_1 .txt__h_2 {
   @apply leading-[140%] tracking-[0];
 }
 
