@@ -6,7 +6,11 @@ type PropsType = ProjectFieldType;
 const ProjectItem: FC<PropsType> = ({ img, url, description, title }) => {
   return (
     <div className="w-full rounded-[12px] overflow-hidden grid bg__black_0 grid-cols-1 lg:grid-rows-2">
-      <a href={url} className="w-full lg:min-h-[324px] lg:max-h-[324px]">
+      <a
+        target="_blank"
+        href={url}
+        className="w-full lg:min-h-[324px] lg:max-h-[324px]"
+      >
         <img
           src={img}
           alt=""

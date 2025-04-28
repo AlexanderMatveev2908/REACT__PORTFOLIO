@@ -22,6 +22,7 @@ const Hero: FC = () => {
         </div>
         <div className="mt-[16px] w-full flex items-center gap-[16px] justify-center xl:justify-start">
           <a
+            target="_blank"
             href="https://github.com/AlexanderMatveev2908"
             className="w-[32px] h-[32px]"
           >
@@ -29,7 +30,7 @@ const Hero: FC = () => {
           </a>
         </div>
         <div className="mt-[24px] w-full flex justify-center xl:justify-start">
-          <Btn {...{ label: "Let's work together" }} />
+          <Btn {...{ label: "Let's work together", href: "#myFooter" }} />
         </div>
       </div>
       {/* RIGHT / DOWN */}
