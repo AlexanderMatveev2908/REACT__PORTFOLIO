@@ -7,7 +7,7 @@ const Hero: FC = () => {
   return (
     <section className="w-full grid xl:grid-cols-2 xl:gap-[310px] py-[64px] h-fit items-start gap-[64px] px-[16px] sm:px-[64px] xl:px-[128px]">
       {/* LEFT / UP */}
-      <div className="w-full grid grid-cols-1 items-start h-fit">
+      <div className="w-full grid grid-cols-1 items-start h-fit max-w-[354px] justify-self-center sm:max-w-[429px]">
         <div className="w-full grid grid-cols-1 h-fit items-start justify-items-center xl:justify-items-start">
           <h6 className="txt__yell_0 txt_p_hero">Hey, I'm</h6>
           <h1 className="txt__yell_0 title_hero">ALEXANDER MATVEEV</h1>
