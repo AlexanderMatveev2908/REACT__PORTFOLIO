@@ -5,16 +5,16 @@ type PropsType = ProjectFieldType;
 
 const ProjectItem: FC<PropsType> = ({ img, url, description, title }) => {
   return (
-    <div className="w-full rounded-[12px] overflow-hidden grid grid-cols-1 h-fit lg:h-full bg__black_0">
+    <div className="w-full rounded-[12px] overflow-hidden grid bg__black_0 grid-cols-1 lg:grid-rows-2">
       <a href={url} className="w-full lg:min-h-[324px] lg:max-h-[324px]">
         <img
           src={img}
           alt=""
-          className="object-cover w-full max-h-full min-h-full"
+          className="object-cover w-full max-h-full lg:min-h-full"
         />
       </a>
 
-      <div className="p-[36px] grid justify-items-start items-center ">
+      <div className="p-[36px] grid justify-items-start max-h-fit items-start lg:flex lg:flex-col">
         <h1 className="txt__yell_0 txt__h_0 font-bold">{title}</h1>
 
         <p className="txt__yell_0 txt__btn_0">{description}</p>
