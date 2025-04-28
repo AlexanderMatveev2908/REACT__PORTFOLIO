@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Header: FC = () => {
   return (
-    <header className="w-full grid grid-cols-[40px_1fr] py-[16px] h-fit items-start">
+    <header className="w-full grid grid-cols-[40px_1fr] py-[16px] h-fit items-start px-[32px] sm:px-[128px]">
       <div className="w-full flex justify-start txt__b_0">
         <h1 className="txt__blue_0 font-bold">A.M.</h1>
       </div>

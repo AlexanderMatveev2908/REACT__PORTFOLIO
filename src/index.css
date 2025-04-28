@@ -8,7 +8,7 @@
   --blue__0: #a9c5f1;
   --blue__1: #015aff;
 
-  --yell: #f4f1d2;
+  --yell__0: #f4f1d2;
 
   --black__0: #0d1e26;
   --black__1: #060f13;
@@ -16,13 +16,17 @@
 
 html {
   background: var(--black__0);
+  scroll-behavior: smooth;
 }
 
 .txt__blue_0 {
   color: var(--blue__0);
 }
 .txt__yell_0 {
-  color: var(--yell);
+  color: var(--yell__0);
+}
+.bg__blue_1 {
+  background: var(--blue__1);
 }
 
 .txt__h_0 {
@@ -50,4 +54,20 @@ html {
 .txt__b_0,
 .txt__btn_0 {
   @apply leading-[180%] tracking-[0];
+}
+
+.title_hero {
+  @apply text-[36px] font-bold leading-[140%] tracking-[0] text-nowrap;
+}
+.txt_p_hero {
+  @apply text-[16px] tracking-[0] leading-[180%];
+}
+
+@media (min-width: 736px) {
+  .title_hero {
+    @apply text-[48px];
+  }
+  .txt_p_hero {
+    @apply text-[18px];
+  }
 }
