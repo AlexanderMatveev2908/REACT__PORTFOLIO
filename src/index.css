@@ -19,7 +19,7 @@ IMPORTANT: for some practical reasons i prefer using snake case instead of kebab
 }
 
 html {
-  background: var(--black__0);
+  background: var(--black__1);
   scroll-behavior: smooth;
 }
 
@@ -60,6 +60,12 @@ html {
 }
 .bg__blue_1 {
   background: var(--blue__1);
+}
+.bg__black_0 {
+  background: var(--black__0);
+}
+.padding__app {
+  @apply px-[16px] sm:px-[64px] xl:px-[128px];
 }
 
 .btn__app {
