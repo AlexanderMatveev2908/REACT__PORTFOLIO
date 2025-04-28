@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+/* 
+IMPORTANT: for some practical reasons i prefer using snake case instead of kebab case in css naming, but only because i am working just myself on this project, if i would have been in a team i would have followed conventions of css or those one established by team   
+*/
+
 * {
   font-family: "Inter";
 }
@@ -19,16 +23,7 @@ html {
   scroll-behavior: smooth;
 }
 
-.txt__blue_0 {
-  color: var(--blue__0);
-}
-.txt__yell_0 {
-  color: var(--yell__0);
-}
-.bg__blue_1 {
-  background: var(--blue__1);
-}
-
+/* TEXT */
 .txt__h_0 {
   @apply text-[32px];
 }
@@ -56,18 +51,24 @@ html {
   @apply leading-[180%] tracking-[0];
 }
 
-.title_hero {
-  @apply text-[36px] font-bold leading-[140%] tracking-[0] text-nowrap;
+/* UTILS */
+.txt__blue_0 {
+  color: var(--blue__0);
 }
-.txt_p_hero {
-  @apply text-[16px] tracking-[0] leading-[180%];
+.txt__yell_0 {
+  color: var(--yell__0);
+}
+.bg__blue_1 {
+  background: var(--blue__1);
 }
 
-@media (min-width: 736px) {
-  .title_hero {
-    @apply text-[48px];
-  }
-  .txt_p_hero {
-    @apply text-[18px];
-  }
+.btn__app {
+  transition: 0.3s;
+}
+.btn__app:hover {
+  transform: scale(1.15);
+}
+.btn__app:active {
+  transition: 0.1s;
+  transform: scale(0.9);
 }

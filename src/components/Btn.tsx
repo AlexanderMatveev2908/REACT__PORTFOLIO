@@ -6,7 +6,7 @@ type PropsType = {
 
 const Btn: FC<PropsType> = ({ label }) => {
   return (
-    <button className="appearance-none outline-0 cursor-pointer bg__blue_1 txt__yell_0 py-[8px] px-[16px] rounded-[8px] font-semibold">
+    <button className="appearance-none outline-0 cursor-pointer bg__blue_1 txt__yell_0 py-[8px] px-[16px] rounded-[8px] font-semibold btn__app">
       <span className="txt__btn_0">{label}</span>
     </button>
   );

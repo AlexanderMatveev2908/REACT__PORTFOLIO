@@ -1,6 +1,6 @@
 import { FC } from "react";
 import Header from "./common/Header";
-import Hero from "./common/Hero";
+import Hero from "./common/Hero/Hero";
 
 const App: FC = () => {
   return (

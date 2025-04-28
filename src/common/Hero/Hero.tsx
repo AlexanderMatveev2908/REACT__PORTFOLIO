@@ -1,6 +1,7 @@
 import { FC } from "react";
-import { icons, imgs } from "../assets/assets";
-import Btn from "../components/Btn";
+import { icons, imgs } from "../../assets/assets";
+import Btn from "../../components/Btn";
+import "./Hero.css";
 
 const Hero: FC = () => {
   return (
@@ -13,7 +14,7 @@ const Hero: FC = () => {
           <h1 className="title_hero txt__blue_0 ">Software Developer</h1>
           <p className="txt__yell_0 txt_p_hero text-center">
             I am currently a student at SDA Academy where I study frontend
-            development while also exploring backend development and creating
+            development, while I am exploring backend on my own and creating
             full-stack projects.
           </p>
         </div>
@@ -31,16 +32,18 @@ const Hero: FC = () => {
       </div>
       {/* RIGHT / DOWN */}
       <div className="w-full flex justify-center items-center">
-        <div className="w-full relative flex justify-center items-center">
-          <div className="w-[314px] h-[324px] ">
-            <div className="h-[64px] w-[80px] bg__blue_1 absolute z-10 rounded-xl bottom-0 translate-y-1/2 left-0"></div>
+        <div className="flex justify-center max-w-[396px] h-[322px] relative items-center">
+          <div className="h-[64px] w-[80px] bg__blue_1 absolute z-10 rounded-xl bottom-0 translate-y-1/2 left-0 -translate-x-[40%]"></div>
+
+          <div className="w-[314px] h-[324px]">
             <img
               src={imgs.hero_0}
               alt=""
-              className="min-w-full min-h-full object-cover relative z-20"
+              className="w-full h-full object-cover relative z-20"
             />
-            <div className="h-[82px] w-[106px] bg__blue_1 absolute z-10 rounded-xl top-0 right-0 -translate-y-1/2"></div>
           </div>
+
+          <div className="h-[82px] w-[106px] bg__blue_1 absolute z-10 rounded-xl top-0 right-[2%] -translate-y-[30%] translate-x-[40%]"></div>
         </div>
       </div>
     </section>
