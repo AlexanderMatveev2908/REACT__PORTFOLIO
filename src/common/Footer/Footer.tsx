@@ -5,15 +5,19 @@ import { icons } from "../../assets/assets";
 
 const Footer: FC = () => {
   return (
-    <footer id="myFooter" className="pt-[64px] pb-[128px] px-[128px]">
-      <div className="w-full max-w-[555px] grid justify-items-center">
+    <footer
+      id="myFooter"
+      className="pt-[64px] pb-[128px] px-[16px] sm:px-[128px]"
+    >
+      <div className="w-full  max-w-[555px] grid justify-items-center">
         <div className="w-full grid gap-[64px]">
           <div className="w-full grid gap-[32px]">
             <div className="w-full grid gap-[16px]">
               <Title
                 {...{
                   title: "Do you want to contact me?",
-                  style: "txt__h_0 txt__yell_0 font-bold justify-center",
+                  style:
+                    "txt__h_0 txt__yell_0 font-bold text-center justify-center",
                 }}
               />
 

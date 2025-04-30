@@ -24,8 +24,8 @@ const PortoFolio: FC = () => {
       </div>
 
       <div className="w-full grid grid-cols-1 gap-[32px] lg:grid-cols-2">
-        {myProjects.map((el) => (
-          <ProjectItem key={el.id} {...el} />
+        {myProjects.map((el, i) => (
+          <ProjectItem key={el.id} {...{ ...el, index: i }} />
         ))}
       </div>
     </section>

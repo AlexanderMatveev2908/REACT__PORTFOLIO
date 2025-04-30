@@ -1,21 +1,25 @@
 import { FC } from "react";
 import { ProjectFieldType } from "../../../config/fieldsData/projects";
 
-type PropsType = ProjectFieldType;
+type PropsType = ProjectFieldType & {
+  index: number;
+};
 
-const ProjectItem: FC<PropsType> = ({ img, url, description, title }) => {
+const ProjectItem: FC<PropsType> = ({
+  img,
+  url,
+  description,
+  title,
+  index,
+}) => {
   return (
-    <div className="w-full rounded-[12px] overflow-hidden grid bg__black_0 grid-cols-1 lg:grid-rows-2">
+    <div className="w-full rounded-[12px] overflow-hidden grid bg__black_0 grid-cols-1 h-fit items-start">
       <a
         target="_blank"
         href={url}
-        className="w-full lg:min-h-[324px] lg:max-h-[324px]"
+        className={`w-full sm:h-[324px] ${!index ? "h-[146px]" : "h-[210px]"}`}
       >
-        <img
-          src={img}
-          alt=""
-          className="object-cover w-full max-h-full lg:min-h-full"
-        />
+        <img src={img} alt="" className="object-cover w-full h-full" />
       </a>
 
       <div className="p-[36px] grid justify-items-start max-h-fit items-start lg:flex lg:flex-col">

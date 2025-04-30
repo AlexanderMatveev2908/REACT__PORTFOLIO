@@ -19,7 +19,7 @@ export const experiences: ExpType[] = [
     title: "Frontend Development Student",
     type: TypeWork.REMOTE,
     at: "SDA Academy",
-    when: "Sep 2023 - Present",
+    when: "Sep 2024 - Present",
     description:
       "The course covers key frontend development concepts, from HTML and CSS to JavaScript, focusing on practical applications and real-world scenarios.",
   },

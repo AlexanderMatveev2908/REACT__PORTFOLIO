@@ -42,9 +42,9 @@ const AboutMe: FC = () => {
             <p className="txt__btn_0 txt__yell_0">
               Hi, I'm Alex. A couple of years ago, due to some health issues, I
               could no longer continue my work as a barman. I decided to use
-              that free time to focus on something new and quickly I become
-              became passionate about software development. Currently, I am a
-              student at SDA Academy, following the front-end development
+              that free time to focus on something new and quickly I became
+              passionate about software development. Currently, I am a student
+              at SDA Academy, following the front-end development
               course,meanwhile I also study backend development on my own. To
               practice and strengthen my skills, I build full-stack
               applications. I'm always eager to learn new technologies that help
